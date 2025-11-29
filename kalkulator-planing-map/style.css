@@ -1,0 +1,183 @@
+
+    * {
+        font-family: Calibri;
+        font-size: 1rem;
+    }
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+    #myDiagramDiv {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 0;
+        top:0;
+        background:#929292;
+    }
+    #splitterPanel {
+        position: absolute;
+        display: none;
+		width:190px;
+        background: white;
+        border: 1px solid #999;
+        padding: 10px;
+        box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+        z-index: 21;
+    }
+	#splitterSelect{
+		width:100%;
+	}
+	#splitterEstimate{
+		margin-top:10px;
+		color:black;
+	}
+    #controls {
+        margin: 0px 10px;
+        text-align: center;
+        width: 65px;
+        position: absolute;
+    }
+    #controls button, select {
+        margin: 0px 0px 5px 0px;
+		padding: 5px;
+		width: 100px;
+		cursor: pointer;
+		background: #99999900;
+		border: 1px solid #fff;
+		color:white;
+    }
+	#controls option {
+	  color: black;
+	}
+    #jsonArea {
+        width: 95%;
+        height: 120px;
+        margin: 10px auto;
+        display: none;
+    }
+    .header-container {
+        position: relative;
+        z-index: 10;
+    }
+    h1{
+        font-size:xxx-large;
+        width: 100%;
+        text-align:center;
+        margin:0px;
+        padding:10px 0px;
+        z-index:10;
+    }
+    .legend {
+        position: relative;
+		right: 0px;
+		z-index: 3;
+		float: right;
+    }
+    .block {
+        height: 1.5rem;
+        width: 3rem;
+        position: relative;
+    }
+    .level {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 0.7rem;
+		color: black;
+	}
+    .label {
+		position: absolute;
+		right: 3.2rem;
+		transform: translateY(1rem);
+		font-size: 0.8rem;
+		white-space: nowrap;
+    }
+	#splitterSelect{
+		background:white;
+		color:black;
+		border: 1px solid black;
+	}
+	.extra-losses-table {
+	  border-collapse: collapse;
+	  width: 100%;
+	  margin-top: 4px;
+	}
+	#lossCable,#lossSplice,#lossConnector,#lossOthers,.extra-losses-table .right {
+	  text-align: right;
+	}
+	#splitterPanel .extra-losses {
+	  font-size: inherit;
+	  background: #eee;
+	  padding:5px;
+	  cursor:pointer;
+	}
+	#splitterPanel .extra-losses table,
+	#splitterPanel .extra-losses td,
+	#splitterPanel .extra-losses td b,
+	#splitterPanel .extra-losses tr {
+	  font-size: 0.75rem;
+	}
+	#ExtraSettings table{
+		margin-top:5px;
+	}
+	#ExtraSettings table,
+	#ExtraSettings td,
+	#ExtraSettings td b,
+	#ExtraSettings tr,
+	#ExtraSettings input {
+	  font-size: 0.75rem;
+	}
+	#ExtraSettings {
+	  font-size: 0.75rem;
+	}
+	#ExtraSettings{
+		position:absolute; 
+		bottom:0px; 
+		left:0px; 
+		background:#fff; 
+		padding:10px; 
+		border:1px solid #999; 
+		font-size:0.75rem; 
+		z-index:5;
+	}
+	#cableLength{
+		width: 50px; 
+		text-align: right;
+		font-size: 0.75rem;
+		margin-right:3px;
+	}
+	#lossTotalCell{
+		float:right;
+		font-size: 0.75rem;
+	}
+	
+	#myOverviewDiv {
+	  position: absolute;
+	  width: 150px;
+	  height: 150px;
+	  bottom: 0px;
+	  right: 0px;
+	  background: #ffffff66;
+	  border: 1px solid #999;
+	  z-index: 5;
+	  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+	}
+	@media (max-width: 768px) {
+	  #myOverviewDiv {
+		display: none; /* sembunyikan di perangkat mobile */
+	  }
+	}
+	#blurOverlay{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		backdrop-filter: blur(3px);
+		background: rgba(0,0,0,0.1);
+		z-index: 20;
+		display: none;
+	}
