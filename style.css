@@ -1,0 +1,244 @@
+/* ===========================
+   GLOBAL STYLE – DARK PREMIUM
+=========================== */
+* {
+    font-family: Calibri, sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background: #330d0d;
+    color: #e8e8e8;
+}
+
+/* ===========================
+   MAIN DIAGRAM AREA
+=========================== */
+#myDiagramDiv {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    background: radial-gradient(circle at center, #012cff45, #000000);
+    border-top: 3px solid #780707;
+}
+
+/* ===========================
+   SPLITTER PANEL – GLASS DARK
+=========================== */
+#splitterPanel {
+    position: absolute;
+    display: none;
+    width: 240px;
+    background: rgba(20,20,20,0.7);
+    border: 1px solid rgba(200,200,200,0.15);
+    padding: 15px;
+    border-radius: 12px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.45);
+    z-index: 21;
+    color: #f1f1f1;
+}
+
+#splitterSelect {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #555;
+    background: #101010;
+    color: #fff;
+}
+
+#splitterSelect:hover {
+    border-color: #999;
+}
+
+#splitterEstimate {
+    margin-top: 12px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* ===========================
+   CONTROLS – MODERN SIDE BUTTONS
+=========================== */
+#controls {
+    margin: 10px;
+    text-align: center;
+    width: 95px;
+    position: absolute;
+    z-index: 10;
+}
+
+#controls button,
+#controls select {
+    margin-bottom: 4px;
+    padding: 3px;
+    width: 100%;
+    cursor: pointer;
+    background: linear-gradient(135deg, #e0010100, #3816de);
+    border: 1px solid #6aeb0b69;
+    border-radius: 8px;
+    color: #f3f1ff;
+    transition: 0.25s;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+#controls button:hover,
+#controls select:hover {
+    background: linear-gradient(135deg, #e90d0d, #0f0f0f);
+    border-color: #2aff24;
+    transform: scale(1.05);
+}
+
+/* ===========================
+   JSON AREA
+=========================== */
+#jsonArea {
+    width: 95%;
+    height: 120px;
+    margin: 10px auto;
+    display: none;
+    background: #271111;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* ===========================
+   HEADER – TITLE
+=========================== */
+.header-container {
+    position: relative;
+    z-index: 10;
+}
+
+h1 {
+    font-size: 2.8rem;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 1px 0;
+    color: #f8f8f8;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(to right, #1a123f, #00000047, #9c157f2b);
+    border-bottom: 1px solid #ffcccc;
+}
+
+/* ===========================
+   LEGEND – MODERN COLOR BLOCKS
+=========================== */
+.legend {
+    float: right;
+    z-index: 3;
+    margin-right: 15px;
+}
+
+.block {
+    height: 1.6rem;
+    width: 3.5rem;
+    border-radius: 6px;
+    position: relative;
+    border: 1px solid #444;
+}
+
+.level {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.label {
+    position: absolute;
+    right: 3.5rem;
+    transform: translateY(1rem);
+    font-size: 0.8rem;
+    white-space: nowrap;
+    color: #ddd;
+}
+
+/* ===========================
+   EXTRA SETTINGS – GLASS UI
+=========================== */
+#ExtraSettings {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    background: linear-gradient(135deg, #e0010100, #3816de);
+    padding: 7px;
+    border: 1px solid #e8bfbf;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    backdrop-filter: blur(10px);
+    z-index: 5;
+    color: #eae8e8;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+}
+
+#ExtraSettings input {
+    background: #3216bf;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    color: #fff;
+    padding: 1px 5px;
+    margin-top: px;
+}
+
+#ExtraSettings input:focus {
+    border-color: #b01717;
+}
+
+#cableLength {
+    width: 60px;
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+/* ===========================
+   OVERVIEW – MINI MAP
+=========================== */
+#myOverviewDiv {
+    position: absolute;
+    width: 165px;
+    height: 165px;
+    bottom: 12px;
+    right: 12px;
+    background: rgba(20,20,20,0.7);
+    border: 1px solid #444;
+    border-radius: 10px;
+    z-index: 5;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.45);
+}
+
+@media (max-width: 768px) {
+    #myOverviewDiv {
+        display: none;
+    }
+}
+
+/* ===========================
+   BLUR OVERLAY
+=========================== */
+#blurOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(7px);
+    background: rgba(0,0,0,0.35);
+    z-index: 20;
+    display: none;
+}
