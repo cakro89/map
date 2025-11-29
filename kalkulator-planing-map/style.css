@@ -24,7 +24,7 @@ html, body {
     z-index: 0;
     top: 0;
     background: radial-gradient(circle at center, #012cff45, #000000);
-    border-top: 3px solid #780707;
+    border-top: 1px solid #780707;
 }
 
 /* ===========================
@@ -242,3 +242,4 @@ h1 {
     z-index: 20;
     display: none;
 }
+
